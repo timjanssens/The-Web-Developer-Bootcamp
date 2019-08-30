@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms Excercise: Slides</title>
+</head>
+
+<body>
+
+    <h1>Register</h1>
+
+    <form action="/some-sever" method="post">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input name="first" type="text" id="firstName" placeholder="John" required>
+
+            <label for="lastName">Last Name:</label>
+            <input name="last" type="text" id="lastName" placeholder="Smith" required>
+        </div>
+
+        <div>
+            <label for="radMale">Male</label>
+            <input type="radio" name="gender" id="radMale" value="male">
+
+            <label for="radFemale">Female</label>
+            <input type="radio" name="gender" id="radFemale" value="female" checked>
+
+            <label for="radOther">Other</label>
+            <input type="radio" name="gender" id="radOther" value="other">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="your password" minlength="5" maxlength="10">
+        </div>
+
+        <div>
+            <label for="choice">Birthday:</label>
+            <select name="month" id="choice">
+                <option value="Month" selected disabled>Month</option>
+                <option value="Januari">Januari</option>
+                <option value="Februari">Februari</option>
+                <option value="Maart">Maart</option>
+            </select>
+            <select name="day">
+                <option value="Day" selected disabled >Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select name="year">
+                <option value="Year"selected disabled >Year</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="consent">I agree to the terms and conditions</label>
+            <input type="checkbox" id="consent" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
