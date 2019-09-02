@@ -21,3 +21,7 @@ function factorial(num) {
     }
     return solution;
 }
+
+function kebabToSnake(string) {
+    return string.replace(/-/g, "_");
+}
