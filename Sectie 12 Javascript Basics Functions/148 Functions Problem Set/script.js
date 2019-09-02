@@ -24,4 +24,4 @@ function factorial(num) {
 
 function kebabToSnake(string) {
     return string.replace(/-/g, "_");
-}
+} 
