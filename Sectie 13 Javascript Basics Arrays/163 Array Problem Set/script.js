@@ -45,3 +45,18 @@ function sumArray(array){
    
 }
 
+//get the highest number out of the array
+
+function max(array) {
+ //declare the first number as hightest (maxNum)   
+var maxNum = array[0];
+
+    array.forEach(element => {
+        //check if an element is greater then maxNum
+        if (element > maxNum) {
+            maxNum = element;
+        }
+    });
+    return maxNum;
+}
+
