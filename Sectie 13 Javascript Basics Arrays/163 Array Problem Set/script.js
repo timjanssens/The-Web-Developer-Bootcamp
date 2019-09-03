@@ -30,3 +30,18 @@ function isUniform(array) {
 //     }
 //     return true;
 // }
+
+//Make the sum of the entire array
+
+function sumArray(array){
+
+    var sum = 0;
+
+    for (i = 0; i < array.length ; i++) {
+        sum += array[i] 
+    }
+    
+    return sum;
+   
+}
+
