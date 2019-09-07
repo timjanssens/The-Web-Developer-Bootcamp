@@ -21,3 +21,12 @@ document.getElementById("pointPlayerTwo").onclick = function() {
         document.getElementById("scorePlayerTwo").innerHTML = scorePlayerTwo;
         document.getElementById("scorePlayerTwo").style.color = "green";
     }}
+
+document.getElementById("resetButton").onclick = function(){
+    scorePlayerOne = 0;
+    scorePlayerTwo = 0;
+    document.getElementById("scorePlayerOne").innerHTML = scorePlayerOne;
+    document.getElementById("scorePlayerOne").style.color = "black";
+    document.getElementById("scorePlayerTwo").innerHTML = scorePlayerTwo;
+    document.getElementById("scorePlayerTwo").style.color = "black";
+}
