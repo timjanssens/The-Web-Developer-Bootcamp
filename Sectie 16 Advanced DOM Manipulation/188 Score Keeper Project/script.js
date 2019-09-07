@@ -26,8 +26,19 @@ document.getElementById("pointPlayerTwo").onclick = function() {
 document.getElementById("resetButton").onclick = function(){
     scorePlayerOne = 0;
     scorePlayerTwo = 0;
+    playingTo = 5;
     document.getElementById("scorePlayerOne").innerHTML = scorePlayerOne;
     document.getElementById("scorePlayerOne").style.color = "black";
     document.getElementById("scorePlayerTwo").innerHTML = scorePlayerTwo;
     document.getElementById("scorePlayerTwo").style.color = "black";
+    document.getElementById("playingTo").innerHTML = playingTo;
+    document.getElementById("playingToAdjustor").value = "";
+}
+
+document.getElementById("playingToAdjustor").onclick = function () {
+    if (scorePlayerOne === 0 && scorePlayerTwo === 0 ){
+    var playingToAdjustor = document.getElementById("playingToAdjustor").value;
+    playingTo =playingToAdjustor;
+    document.getElementById("playingTo").innerHTML = playingToAdjustor;
+    }
 }
