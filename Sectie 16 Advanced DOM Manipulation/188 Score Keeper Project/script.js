@@ -2,6 +2,9 @@ var scorePlayerOne = 0;
 var scorePlayerTwo = 0;
 var playingTo = 5
 
+//add point to player if the max score isn't reached
+//when the max score is reached turn green and make it
+//impossible to add score to anyone 
 document.getElementById("pointPlayerOne").onclick = function() {
     if (scorePlayerOne < playingTo-1 && scorePlayerTwo < playingTo) {
     scorePlayerOne++;
@@ -12,7 +15,9 @@ document.getElementById("pointPlayerOne").onclick = function() {
         document.getElementById("scorePlayerOne").style.color = "green";
     }}
 
-
+//add point to player if the max score isn't reached
+//when the max score is reached turn green and make it
+//impossible to add score to anyone
 document.getElementById("pointPlayerTwo").onclick = function() {
     if (scorePlayerTwo < playingTo-1 && scorePlayerOne < playingTo) {
     scorePlayerTwo++;
@@ -23,6 +28,7 @@ document.getElementById("pointPlayerTwo").onclick = function() {
         document.getElementById("scorePlayerTwo").style.color = "green";
     }}
 
+//reset both scores to zero and also the max games to standard
 document.getElementById("resetButton").onclick = function(){
     scorePlayerOne = 0;
     scorePlayerTwo = 0;
@@ -35,6 +41,7 @@ document.getElementById("resetButton").onclick = function(){
     document.getElementById("playingToAdjustor").value = "";
 }
 
+//when the game is not yet started, make it possible to change the max score
 document.getElementById("playingToAdjustor").onclick = function () {
     if (scorePlayerOne === 0 && scorePlayerTwo === 0 ){
     var playingToAdjustor = document.getElementById("playingToAdjustor").value;
