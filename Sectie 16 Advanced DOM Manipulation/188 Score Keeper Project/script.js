@@ -1,11 +1,12 @@
 var scorePlayerOne = 0;
 var scorePlayerTwo = 0;
+var playingTo = 5
 
 document.getElementById("pointPlayerOne").onclick = function() {
-    if (scorePlayerOne < 6 && scorePlayerTwo < 7) {
+    if (scorePlayerOne < playingTo-1 && scorePlayerTwo < playingTo) {
     scorePlayerOne++;
     document.getElementById("scorePlayerOne").innerHTML = scorePlayerOne;
-    } else if (scorePlayerOne < 7 && scorePlayerTwo < 7){
+    } else if (scorePlayerOne < playingTo && scorePlayerTwo < playingTo){
         scorePlayerOne++;
         document.getElementById("scorePlayerOne").innerHTML = scorePlayerOne;
         document.getElementById("scorePlayerOne").style.color = "green";
@@ -13,10 +14,10 @@ document.getElementById("pointPlayerOne").onclick = function() {
 
 
 document.getElementById("pointPlayerTwo").onclick = function() {
-    if (scorePlayerTwo < 6 && scorePlayerOne < 7) {
+    if (scorePlayerTwo < playingTo-1 && scorePlayerOne < playingTo) {
     scorePlayerTwo++;
     document.getElementById("scorePlayerTwo").innerHTML = scorePlayerTwo;
-    } else if (scorePlayerTwo < 7 && scorePlayerOne < 7){
+    } else if (scorePlayerTwo < playingTo && scorePlayerOne < playingTo){
         scorePlayerTwo++;
         document.getElementById("scorePlayerTwo").innerHTML = scorePlayerTwo;
         document.getElementById("scorePlayerTwo").style.color = "green";
