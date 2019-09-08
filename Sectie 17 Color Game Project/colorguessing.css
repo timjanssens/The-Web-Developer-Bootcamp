@@ -1,3 +1,94 @@
-p {
-    color: blue;
+* {
+    margin:0;
+    padding:0;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#colorTextRGB{
+    font-size: 200%;
+}
+
+nav {
+
+    height: 30px;
+    width: 800px;
+    margin-left: calc((100% - 800px)/2);
+    margin-right: calc((100% - 800px)/2);
+
+}
+
+#result {
+    text-transform: capitalize !important;
+    color: black;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row  wrap;
+    justify-content: space-evenly;
+}
+
+li{
+    color:  #3970A5;
+    padding-top:5px;
+}
+
+
+header { 
+    background-color: #3970A5;
+    height: 190px;
+}
+
+#squareColorsBackground {
+    background-color: black;
+    height: calc(100% - 220px);
+}
+
+#squareColors {
+    padding-top: 25px;
+    width: 800px;
+    height: 350px;
+    margin-left: calc((100% - 800px)/2);
+    margin-right: calc((100% - 800px)/2);
+    color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+ }
+
+.cell {
+    border-radius: 25px;
+}
+
+#cell1 {
+    background-color: green;
+}
+
+#cell2 {
+    background-color: red;
+}
+
+#cell3 {
+    background-color: blue;
+}
+
+#cell4 {
+    background-color: yellow;
+}
+
+#cell5 {
+    background-color: white;
+}
+
+#cell6 {
+    background-color:cornflowerblue;
 }
