@@ -1,7 +1,12 @@
-li:hover {
+/* li:hover {
     font-weight: bolder;
-}
+} */
 
 .strikeThrough{
     text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.selected {
+    font-weight: bolder;
 }
